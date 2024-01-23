@@ -1,0 +1,13 @@
+<% include ./partials/header.ejs %>
+    <div class="w-full h-screen bg-zinc-800 flex justify-center pt-1">
+        <div class="w-[35vw] h-96 bg-zinc-700 px-20 py-10 mt-10 rounded-[30px]">
+            <h1 class="text-3xl mb-7 text-center font-semibold text-white tracking-tighter capitalize leading-none">Edit Account Details</h1>
+            <form action="/edit" method="post">
+                <input class="border-2 rounded-md block mt-2 w-full px-3 py-2" type="text" name="newfullname" placeholder="Full Name">
+                <input class="border-2 rounded-md block mt-2 w-full px-3 py-2" type="email" name="newEmail" placeholder="email">
+                <input class="border-2 rounded-md block mt-2 w-full px-3 py-2" type="number" name="newContact" placeholder="contact">
+                <input class="rounded-full block mt-5 w-full px-3 py-2 bg-red-600 text-white rounded-full" type="submit" value="Save Changes">
+            </form>
+        </div>
+    </div>
+<% include ./partials/footer.ejs %>
